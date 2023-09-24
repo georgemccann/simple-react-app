@@ -65,7 +65,7 @@ export const CustomerReducer = (state = initialState, action) => {
     case types.UPDATE_CUSTOMERS_SUCCESS:
       return {
         ...state,
-        data: [...action.payload],
+        data: action.payload[0],
         isFetching: false,
         hasFailed: false,
         errorMsg: "",
