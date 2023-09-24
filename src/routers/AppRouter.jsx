@@ -1,6 +1,8 @@
 import React, {Suspense} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-
+import {
+  Navigation
+} from "@/components"
 import { 
     Dashboard, 
     Page404
@@ -11,6 +13,7 @@ export default function AppRouter() {
     <>
       <Suspense>
         <Router> 
+          <Navigation/>
           <Routes> 
             <Route exact index element={<Dashboard/>} />
             <Route path="*" element={<Page404 />} />
