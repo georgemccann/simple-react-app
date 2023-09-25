@@ -5,7 +5,8 @@ import {
 } from "@/components"
 import { 
     Dashboard, 
-    Page404
+    Page404,
+    Customers
   } from "@/containers";
  
 export default function AppRouter() { 
@@ -16,6 +17,7 @@ export default function AppRouter() {
           <Navigation/>
           <Routes> 
             <Route exact index element={<Dashboard/>} />
+            <Route path="/customers" element={<Customers />} />
             <Route path="*" element={<Page404 />} />
           </Routes> 
         </Router>

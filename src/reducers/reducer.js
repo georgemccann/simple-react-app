@@ -1,10 +1,10 @@
 import localforage from "localforage";
 import {combineReducers} from "redux";
 
-import {AppReducer} from "./AppReducer"; 
+import {CustomerReducer} from "./CustomerReducer"; 
 
 const appReducer = combineReducers({
-  initialState: AppReducer,
+  customers: CustomerReducer,
 });
 
 
