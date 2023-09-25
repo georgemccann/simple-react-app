@@ -18,6 +18,9 @@ export default function Navigation() {
             <li className="nav-item active">
               <Link aria-label="Home" className="nav-link" to="/">Home</Link>
             </li> 
+            <li className="nav-item active">
+              <Link aria-label="Customers" className="nav-link" to="/customers">Customers</Link>
+            </li> 
           </ul> 
         </div> 
       </div> 
